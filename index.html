@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft World</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ background:#101710;color:white;
+ font-family:Arial,sans-serif;
+ width:100%;min-height:100vh
+}
+header{
+ background:#142719;padding:25px 5%;
+ display:flex;justify-content:space-between;
+ align-items:center;flex-wrap:wrap;
+ border-bottom:2px solid #54d34b
+}
+.logo{font-size:30px;color:#69ed5e;font-weight:bold}
+header p{color:#bbb;margin-top:5px}
+nav{
+ background:#1b3320;padding:18px;
+ display:flex;justify-content:center;
+ flex-wrap:wrap;gap:25px;
+ position:sticky;top:0;z-index:10
+}
+nav a{
+ color:white;text-decoration:none;font-weight:bold
+}
+nav a:hover{color:#6bea60}
+.hero{
+ min-height:75vh;
+ background:linear-gradient(#0008,#000b),
+ url("https://images.unsplash.com/photo-1607513746994-51f730a44832?w=1800");
+ background-position:center;background-size:cover;
+ display:flex;justify-content:center;
+ align-items:center;text-align:center;padding:30px
+}
+.hero h1{font-size:clamp(35px,6vw,65px);color:#75f06a}
+.hero p{font-size:20px;margin:20px 0}
+.btn{
+ display:inline-block;background:#4caf43;
+ padding:15px 28px;border-radius:7px;
+ color:white;text-decoration:none;font-weight:bold
+}
+section{padding:65px 5%;width:100%}
+h2{
+ color:#70e766;font-size:32px;
+ margin-bottom:30px
+}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+ gap:22px;width:100%
+}
+.card{
+ background:#1b2b1e;padding:25px;
+ border:1px solid #355b39;border-radius:12px;
+ transition:.2s
+}
+.card:hover{transform:translateY(-5px);border-color:#70e766}
+.card h3{color:#7aee70;margin-bottom:15px;font-size:21px}
+.card p{color:#ddd;line-height:1.7}
+.card a{
+ display:inline-block;margin-top:15px;
+ color:#81ee76;text-decoration:none;font-weight:bold
+}
+.card a:hover{text-decoration:underline}
+#search{
+ width:100%;max-width:600px;padding:16px;
+ background:#1b2b1e;border:1px solid #60d456;
+ border-radius:8px;color:white;font-size:16px;
+ margin-bottom:25px
+}
+.search-results{margin-top:10px}
+footer{
+ background:#142719;text-align:center;
+ padding:35px;color:#aaa
+}
+footer h2{margin-bottom:12px}
+@media(max-width:600px){
+ header{justify-content:center;text-align:center;gap:10px}
+ nav{gap:15px}
+ section{padding:40px 5%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div>
+  <div class="logo">⛏ MINECRAFT WORLD</div>
+  <p>Największy świat minecraftowych ciekawostek!</p>
+ </div>
+</header>
+
+<nav>
+ <a href="#start">START</a>
+ <a href="#ciekawostki">CIEKAWOSTKI</a>
+ <a href="#mody">MODY</a>
+ <a href="#modpacki">MODPACKI</a>
+ <a href="#moby">MOBY</a>
+ <a href="#shadery">SHADERY</a>
+ <a href="#poradniki">JAK GRAĆ</a>
+</nav>
+
+<div class="hero" id="start">
+ <div>
+  <h1>WITAJ W MINECRAFT WORLD!</h1>
+  <p>Odkrywaj, buduj i poznawaj sekrety Minecraft.</p>
+  <a href="#ciekawostki" class="btn">ODKRYWAJ ŚWIAT</a>
+ </div>
+</div>
+
+<section id="ciekawostki">
+<h2>🧠 Ciekawostki Minecraft</h2>
+<div class="cards">
+ <div class="card"><h3>Creeper</h3><p>Creeper powstał przez pomyłkę podczas tworzenia modelu świni.</p></div>
+ <div class="card"><h3>Enderman</h3><p>Może teleportować się i przenosić wybrane bloki.</p></div>
+ <div class="card"><h3>Redstone</h3><p>Umożliwia budowanie automatycznych mechanizmów.</p></div>
+ <div class="card"><h3>Nether</h3><p>Niebezpieczny wymiar z lawą, fortecami i wyjątkowymi mobami.</p></div>
+</div>
+</section>
+
+<section id="mody">
+<h2>⚙️ Najlepsze mody</h2>
+<div class="cards">
+ <div class="card"><h3>JEI</h3><p>Przeglądarka przepisów i przedmiotów.</p><a href="https://www.curseforge.com/minecraft/mc-mods/jei">Zobacz mod →</a></div>
+ <div class="card"><h3>Biomes O' Plenty</h3><p>Wiele nowych biomów do odkrywania.</p><a href="https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty">Zobacz mod →</a></div>
+ <div class="card"><h3>JourneyMap</h3><p>Mapa świata Minecraft.</p><a href="https://www.curseforge.com/minecraft/mc-mods/journeymap">Zobacz mod →</a></div>
+ <div class="card"><h3>Waystones</h3><p>Szybkie podróżowanie między miejscami.</p><a href="https://www.curseforge.com/minecraft/mc-mods/waystones">Zobacz mod →</a></div>
+</div>
+</section>
+
+<section id="modpacki">
+<h2>📦 Modpacki</h2>
+<div class="cards">
+ <div class="card"><h3>All The Mods 9</h3><p>Technologia, magia i eksploracja.</p><a href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-9">Zobacz →</a></div>
+ <div class="card"><h3>Better MC</h3><p>Rozbudowana przygoda survivalowa.</p><a href="https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc4">Zobacz →</a></div>
+ <div class="card"><h3>RLCraft</h3><p>Bardzo wymagający modpack survivalowy.</p><a href="https://www.curseforge.com/minecraft/modpacks/rlcraft">Zobacz →</a></div>
+</div>
+</section>
+
+<section id="moby">
+<h2>👾 Moby Minecraft</h2>
+<div class="cards">
+ <div class="card"><h3>🧟 Zombie</h3><p>Wrogi mob pojawiający się głównie nocą.</p></div>
+ <div class="card"><h3>💥 Creeper</h3><p>Wybucha w pobliżu gracza.</p></div>
+ <div class="card"><h3>👁 Enderman</h3><p>Teleportuje się i może przenosić bloki.</p></div>
+ <div class="card"><h3>🐉 Ender Dragon</h3><p>Potężny boss z wymiaru End.</p></div>
+ <div class="card"><h3>🛡 Warden</h3><p>Groźny mob z biomu Deep Dark.</p></div>
+ <div class="card"><h3>🐺 Wilk</h3><p>Można go oswoić i mieć jako towarzysza.</p></div>
+</div>
+</section>
+
+<section id="shadery">
+<h2>🌅 Shadery</h2>
+<div class="cards">
+ <div class="card"><h3>Complementary Reimagined</h3><p>Piękne światło i ulepszona woda.</p><a href="https://modrinth.com/shader/complementary-reimagined">Zobacz →</a></div>
+ <div class="card"><h3>Complementary Unbound</h3><p>Rozbudowane efekty graficzne.</p><a href="https://www.complementary.dev/shaders/">Zobacz →</a></div>
+ <div class="card"><h3>Iris Shaders</h3><p>Mod do uruchamiania shaderów.</p><a href="https://irisshaders.dev/">Zobacz →</a></div>
+</div>
+</section>
+
+<section id="poradniki">
+<h2>📚 Jak grać w Minecraft?</h2>
+<div class="cards">
+ <div class="card"><h3>1. Początek</h3><p>Zbierz drewno i stwórz podstawowe narzędzia.</p></div>
+ <div class="card"><h3>2. Przetrwanie</h3><p>Zbuduj schronienie i zdobądź jedzenie.</p></div>
+ <div class="card"><h3>3. Kopalnie</h3><p>Szukaj żelaza, diamentów i innych surowców.</p></div>
+ <div class="card"><h3>4. Nether</h3><p>Przygotuj portal i odpowiedni ekwipunek.</p></div>
+ <div class="card"><h3>5. End</h3><p>Znajdź twierdzę i przygotuj się na smoka.</p></div>
+</div>
+</section>
+
+<section id="wyszukiwarka">
+<h2>🔎 Wyszukiwarka Minecraft</h2>
+<input id="search" placeholder="Szukaj np. Creeper, JEI, Enderman...">
+<div class="cards" id="results"></div>
+</section>
+
+<footer>
+<h2>⛏ MINECRAFT WORLD</h2>
+<p>Fanowski portal Minecraft.</p>
+<p>Minecraft należy do Mojang Studios i Microsoft.</p>
+<p>© 2026 Minecraft World</p>
+</footer>
+
+<script>
+const input=document.getElementById("search");
+const results=document.getElementById("results");
+const cards=document.querySelectorAll("section .card");
+
+input.addEventListener("input",()=>{
+ const q=input.value.trim().toLowerCase();
+ results.innerHTML="";
+ if(!q)return;
+ let count=0;
+ cards.forEach(card=>{
+  if(card.innerText.toLowerCase().includes(q)){
+   results.appendChild(card.cloneNode(true));
+   count++;
+  }
+ });
+ if(!count){
+  results.innerHTML="<p>Nie znaleziono wyników.</p>";
+ }
+});
+</script>
+
+</body>
+</html>
