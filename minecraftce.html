@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft World - Portal Minecraft</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #101710;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #172b19;
+    padding: 22px;
+    text-align: center;
+    border-bottom: 3px solid #54c44c;
+}
+
+header h1 {
+    color: #62e65a;
+    font-size: 36px;
+}
+
+nav {
+    background: #203923;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #65ed58;
+}
+
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(#0009,#000b),
+    url("https://images.unsplash.com/photo-1607513746994-51f730a44832?w=1600");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background: #4caf43;
+    padding: 14px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #328d2d;
+}
+
+section {
+    padding: 55px 8%;
+}
+
+section h2 {
+    color: #69e75e;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1d2c20;
+    padding: 24px;
+    border-radius: 10px;
+    border: 1px solid #355d38;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #65e65a;
+}
+
+.card h3 {
+    color: #80e978;
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.card a {
+    color: #83ef77;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#search {
+    padding: 14px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 6px;
+    border: 1px solid #4caf43;
+    background: #1d2c20;
+    color: white;
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+    background: #172b19;
+    padding: 30px;
+    color: #aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>⛏ MINECRAFT WORLD</h1>
+    <p>Twój portal o świecie Minecraft!</p>
+</header>
+
+<nav>
+    <a href="#start">Start</a>
+    <a href="#ciekawostki">Ciekawostki</a>
+    <a href="#mody">Mody</a>
+    <a href="#modpacki">Modpacki</a>
+    <a href="#moby">Moby</a>
+    <a href="#poradniki">Jak grać</a>
+</nav>
+
+<div class="hero" id="start">
+    <h2>Witaj w Minecraft World!</h2>
+    <p>Odkrywaj sekrety, poznawaj mody i buduj własny świat.</p>
+    <a href="#ciekawostki" class="button">ODKRYWAJ</a>
+</div>
+
+<section id="ciekawostki">
+    <h2>🧠 Ciekawostki Minecraft</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Enderman</h3>
+            <p>Endermany potrafią przenosić niektóre bloki i teleportować się.</p>
+        </div>
+
+        <div class="card">
+            <h3>Creeper</h3>
+            <p>Creeper powstał przez pomyłkę podczas tworzenia modelu świni.</p>
+        </div>
+
+        <div class="card">
+            <h3>Nether</h3>
+            <p>Nether to niebezpieczny wymiar pełen lawy i wyjątkowych mobów.</p>
+        </div>
+
+        <div class="card">
+            <h3>Redstone</h3>
+            <p>Redstone pozwala budować mechanizmy, pułapki i automatyczne farmy.</p>
+        </div>
+    </div>
+</section>
+
+<section id="mody">
+    <h2>⚙️ Najciekawsze mody</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>JEI</h3>
+            <p>Pokazuje przepisy na przedmioty i bloki w grze.</p>
+            <a href="https://www.curseforge.com/minecraft/mc-mods/jei" target="_blank">Zobacz mod</a>
+        </div>
+
+        <div class="card">
+            <h3>Biomes O' Plenty</h3>
+            <p>Dodaje wiele nowych biomów i ciekawych miejsc.</p>
+            <a href="https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty" target="_blank">Zobacz mod</a>
+        </div>
+
+        <div class="card">
+            <h3>JourneyMap</h3>
+            <p>Dodaje mapę świata, dzięki której łatwiej się orientować.</p>
+            <a href="https://www.curseforge.com/minecraft/mc-mods/journeymap" target="_blank">Zobacz mod</a>
+        </div>
+
+        <div class="card">
+            <h3>Waystones</h3>
+            <p>Pozwala szybko podróżować między odkrytymi miejscami.</p>
+            <a href="https://www.curseforge.com/minecraft/mc-mods/waystones" target="_blank">Zobacz mod</a>
+        </div>
+    </div>
+</section>
+
+<section id="modpacki">
+    <h2>📦 Modpacki</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>All the Mods 9</h3>
+            <p>Duży modpack z technologią, magią i eksploracją.</p>
+            <a href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-9" target="_blank">Zobacz modpack</a>
+        </div>
+
+        <div class="card">
+            <h3>Better MC</h3>
+            <p>Rozbudowuje klasyczną przygodę Minecraft o nowe elementy.</p>
+            <a href="https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc4" target="_blank">Zobacz modpack</a>
+        </div>
+
+        <div class="card">
+            <h3>RLCraft</h3>
+            <p>Trudny modpack nastawiony na przetrwanie.</p>
+            <a href="https://www.curseforge.com/minecraft/modpacks/rlcraft" target="_blank">Zobacz modpack</a>
+        </div>
+    </div>
+</section>
+
+<section id="moby">
+    <h2>👾 Moby Minecraft</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🧟 Zombie</h3>
+            <p>Wrogi mob pojawiający się głównie w nocy.</p>
+        </div>
+
+        <div class="card">
+            <h3>💥 Creeper</h3>
+            <p>Niebezpieczny mob, który wybucha blisko gracza.</p>
+        </div>
+
+        <div class="card">
+            <h3>👁 Enderman</h3>
+            <p>Neutralny mob, który może teleportować się.</p>
+        </div>
+
+        <div class="card">
+            <h3>🐉 Ender Dragon</h3>
+            <p>Główny boss wymiaru End.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛡 Warden</h3>
+            <p>Potężny mob żyjący w Deep Dark.</p>
+        </div>
+
+        <div class="card">
+            <h3>🐺 Wilk</h3>
+            <p>Można go oswoić i mieć jako towarzysza.</p>
+        </div>
+    </div>
+</section>
+
+<section id="poradniki">
+    <h2>📚 Jak grać w Minecraft?</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>1. Początek</h3>
+            <p>Zbierz drewno, zrób stół rzemieślniczy i podstawowe narzędzia.</p>
+        </div>
+
+        <div class="card">
+            <h3>2. Przetrwanie</h3>
+            <p>Zbuduj schronienie, zdobądź jedzenie i przygotuj pochodnie.</p>
+        </div>
+
+        <div class="card">
+            <h3>3. Kopalnie</h3>
+            <p>Wyrusz po węgiel, żelazo, diamenty i inne surowce.</p>
+        </div>
+
+        <div class="card">
+            <h3>4. Nether</h3>
+            <p>Przygotuj portal i ekwipunek przed wyprawą do Netheru.</p>
+        </div>
+
+        <div class="card">
+            <h3>5. End</h3>
+            <p>Znajdź twierdzę, aktywuj portal i przygotuj się na walkę ze smokiem.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>🔎 Szukaj na stronie</h2>
+    <input id="search" type="text" placeholder="Wpisz np. Creeper, JEI, Enderman...">
+
+    <div class="cards" id="searchResults"></div>
+</section>
+
+<footer>
+    <h3>⛏ MINECRAFT WORLD</h3>
+    <p>Fanowska strona poświęcona Minecraft.</p>
+    <p>Minecraft jest własnością Mojang Studios i Microsoft.</p>
+    <p>© 2026 Minecraft World</p>
+</footer>
+
+<script>
+const search = document.getElementById("search");
+const cards = document.querySelectorAll(".card");
+const results = document.getElementById("searchResults");
+
+search.addEventListener("input", function() {
+    const query = search.value.toLowerCase();
+    results.innerHTML = "";
+
+    cards.forEach(card => {
+        if(card.innerText.toLowerCase().includes(query) && query !== "") {
+            results.appendChild(card.cloneNode(true));
+        }
+    });
+
+    if(query === "") {
+        results.innerHTML = "<p>Wpisz nazwę, aby wyszukać informacje.</p>";
+    }
+});
+</script>
+
+</body>
+</html>
+
+<section id="shadery">
+    <h2>🌅 Shadery Minecraft</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Complementary Reimagined</h3>
+            <p>Piękne oświetlenie, realistyczna woda
+            i ulepszone cienie.</p>
+            <a href="https://modrinth.com/shader/complementary-reimagined"
+            target="_blank">Pobierz / zobacz</a>
+        </div>
+
+        <div class="card">
+            <h3>Complementary Unbound</h3>
+            <p>Bardziej realistyczna grafika,
+            efekty świetlne i piękne krajobrazy.</p>
+            <a href="https://www.complementary.dev/shaders/"
+            target="_blank">Oficjalna strona</a>
+        </div>
+
+        <div class="card">
+            <h3>Iris Shaders</h3>
+            <p>Mod pozwalający uruchamiać shadery
+            w Minecraft Java Edition.</p>
+            <a href="https://irisshaders.dev/"
+            target="_blank">Oficjalna strona Iris</a>
+        </div>
+
+    </div>
+
+    <h3 style="color:#69e75e;margin-top:35px;">
+        Jak zainstalować shadery?
+    </h3>
+
+    <div class="card">
+        <p>1. Zainstaluj odpowiednią wersję Iris.</p>
+        <p>2. Pobierz wybrany shader.</p>
+        <p>3. Otwórz folder shaderpacks.</p>
+        <p>4. Wklej tam pobrany plik ZIP.</p>
+        <p>5. Uruchom Minecraft i wybierz shader
+        w ustawieniach grafiki.</p>
+    </div>
+</section>
